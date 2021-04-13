@@ -1,5 +1,7 @@
 const greet = name => {
-    return `Hello ${ name }.`
+    console.log( `Hello ${ name }.` )
 }
 
-console.log( greet('Yesid') )
+module.exports = {
+    greet
+}
