@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const crearArchivo = async( base = 5, listar = false) => {
+const crearArchivo = async( base = 5, listar = false, hasta = 10) => {
 
     try{
         const dir = './files/';
@@ -9,7 +9,7 @@ const crearArchivo = async( base = 5, listar = false) => {
 
         let content = ``;
 
-        for(let i = 1; i <= 10; i++){
+        for(let i = 1; i <= hasta; i++){
             content += `${ base } x ${ i } = ${ base * i }\n`;
         }
 
